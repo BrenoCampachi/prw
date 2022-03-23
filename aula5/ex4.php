@@ -14,9 +14,9 @@
 
 <?php
     
-    $maior = 0;
-    $meio = 0;
-    $menor = 0;
+    $maior;
+    $meio;
+    $menor;
 
     $n1 = 4;
     $n2 = 8;
@@ -24,21 +24,39 @@
     
     if($n1 > $n2 && $n1 > $n3)
     {
-        $maior = $n1;
-
         if($n2 > $n3)
         {
-            $meio = $n2;
-            $menor = $n3;
+            echo $n1." ".$n2." ".$n3;
         }
-        elseif($n3 > $n2)
+        else
         {
-            $meio = $n3;
-            $menor = $n2;
+            echo $n1." ".$n3." ".$n2;
         }
     }
 
-    echo $maior." ".$meio." ".$menor;
+    if($n2 > $n1 && $n2 > $n3)
+    {
+        if($n1 > $n3)
+        {
+            echo $n2." ".$n1." ".$n3;
+        }
+        else
+        {
+            echo $n2." ".$n3." ".$n1;
+        }
+    }
+
+    if($n3 > $n1 && $n3 > $n2)
+    {
+        if($n1 > $n2)
+        {
+            echo $n3." ".$n1." ".$n2;
+        }
+        else
+        {
+            echo $n1." ".$n2." ".$n1;
+        }
+    }
  
 ?>
 </body>
