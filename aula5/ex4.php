@@ -14,9 +14,9 @@
 
 <?php
     
-    $maior;
-    $meio;
-    $menor;
+    $maior = 0;
+    $meio = 0;
+    $menor = 0;
 
     $n1 = 4;
     $n2 = 8;
@@ -37,8 +37,9 @@
             $menor = $n2;
         }
     }
-    
-    
+
+    echo $maior." ".$meio." ".$menor;
+ 
 ?>
 </body>
 </html>
