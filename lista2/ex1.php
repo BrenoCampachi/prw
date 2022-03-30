@@ -15,7 +15,7 @@
 <?php
 
     $par = 0;
-    
+
     for($repeticao=1;$repeticao<100;$repeticao++)
     {
         if($repeticao % 2 == 0)
@@ -26,7 +26,7 @@
     }
 
     $soma = $par + $par;
-    echo $par;
+    echo "A soma dos números pares até 100 é de: " .$par;
  
 ?>
 </body>
