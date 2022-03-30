@@ -19,7 +19,7 @@
         echo "O número é: " .$repeticao;
         echo "<br>";
 
-        if($repeticao / 1 && $repeticao / $repeticao)
+        if($repeticao / 1 !=0)
         {
             echo "Esse número é primo!";
             echo "<br>";
