@@ -14,14 +14,21 @@
 
 <?php
 
-    for($i=1;$i<=200;$i++)
+    for($repeticao=1;$repeticao<=200;$repeticao++)
     {
-        
-        if( ($numero/$i)%$i != 0 ){
-            echo "$numero é primo";
-          }else{
-            echo "$numero não é primo";
-          }
+        echo "O número é: " .$repeticao;
+        echo "<br>";
+
+        if($repeticao / 1 && $repeticao / $repeticao)
+        {
+            echo "Esse número é primo!";
+            echo "<br>";
+        }
+        else
+        {
+            echo "Esse número não é primo!";
+            echo "<br>";
+        }
         
     }
  
