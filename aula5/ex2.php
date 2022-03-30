@@ -10,7 +10,7 @@
 
 </head>
 <body>
-<h1>Lista de Exercicios</h1>
+<h1>Lista de Exercicios - teste</h1>
 
 <?php
 
