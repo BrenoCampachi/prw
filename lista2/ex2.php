@@ -16,6 +16,7 @@
 
     $mes = 7;
     echo "O número digitado é: " .$mes;
+    echo "<br>";
 
     switch($mes)
     {
