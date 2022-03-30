@@ -14,6 +14,8 @@
 
 <?php
 
+    $par = 0;
+    
     for($repeticao=1;$repeticao<100;$repeticao++)
     {
         if($repeticao % 2 == 0)
