@@ -18,8 +18,15 @@
     {
         echo "O número é: " .$repeticao;
         echo "<br>";
+        
+        $divisores = 0 ;
 
-        if($repeticao / 1 !=0)
+        for($divisores=1;$divisores=2;$divisores++)
+        {
+            $divisores++;
+        }
+
+        if($divisores <=2)
         {
             echo "Esse número é primo!";
             echo "<br>";
