@@ -16,9 +16,7 @@
 
     for($i=1;$i<=200;$i++)
     {
-        echo "O número é: " .$repeticao;
-        echo "<br>";
-
+        
         if( ($numero/$i)%$i != 0 ){
             echo "$numero é primo";
           }else{
