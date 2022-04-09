@@ -3,7 +3,7 @@
     
     $palavra = "Estudantes" ;
 
-    $nova_Palavra = str_replace($vogais, "x", $palavra);
+    $nova_palavra = str_replace($vogais, "x", $palavra);
     
     echo "Palavra: ". $palavra. "<br><br>" ;
 
