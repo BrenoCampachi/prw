@@ -1,6 +1,6 @@
 <?php
     
-    echo "<h1>Exercício 1 - Lista 4</h1>" ;
+    echo "<h1>Exercício 1</h1>" ;
 
     $N1 = $_GET["numero1"] ;
 
