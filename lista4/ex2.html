@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breno - PHP</title>
+</head>
+<body>
+
+    <h1>Exercício 2 da Lista 4</h1>
+    <h1>Cadastro de Usuário</h1>
+
+    <hr>
+
+    <form action = "Ex2.php" method = "GET">
+        
+        <div>
+
+            <label for = "nome">Nome: </label>
+            <input type = "text" name = "nome"></input>
+
+        </div>
+
+        <br>
+
+        <div>
+            
+            <label for = "Idade">Idade: </label>
+            <input type = "text" name = "Idade"></input>
+
+        </div>
+
+        <br>
+
+        <div>
+            
+            <input type = "radio" name = "optGenero" value = "Masculino">Masculino</input>
+            <input type = "radio" name = "optGenero" value = "Feminino">Feminino</input>
+            <input type = "radio" name = "optGenero" value = "Outro">Outro</input>
+
+        </div>
+
+        <br><p>Selecione as linguagens de programação que vc domina:</p>
+
+        <div>
+
+            <input type = "checkbox" name = "chkPHP" value = "PHP">PHP</input>
+            <input type = "checkbox" name = "chkC" value = "C++">C++</input>
+            <input type = "checkbox" name = "chkJava" value = "Java">Java</input>
+            <input type = "checkbox" name = "chkPython" value = "Python">Python</input>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <p>Formação do Ensino médio:</p>
+
+            <select name = "SelMenu" value = "Menu" size = "3">
+
+                <option>Incompleto</option>
+                <option>Cursando</option>
+                <option>Completo</option>
+
+            </select>
+
+        </div>
+
+        <br><p>Conte mais sobre você:</p>
+
+        <div>
+
+            <textarea name = "TextDesc" rows = "6" cols = "30" maxlength = "150">
+            </textarea>
+
+        </div>
+
+        <br>
+
+        <button type = "submit">Salvar</button>
+
+    </form>
+
+</body>
+</html>
