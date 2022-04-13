@@ -1,7 +1,7 @@
 <?php
     
     echo "<h1>Prova de Programação - 1° Bimestre</h1>";
-    echo "<h1>Exercício 2</h1>";
+    echo "<h1>Exercício 3</h1>";
 
     $nome = $_GET["nome"];
     $altura = $_GET["altura"];
