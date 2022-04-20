@@ -2,6 +2,7 @@
     
     echo "<h1>Cadastro do usuário</h1>";
 
+    include("conexao.php");
     $nome = $_GET["nome"];
     $email = $_GET["Email"];
     $telefone = $_GET["telefone"];
@@ -21,6 +22,8 @@
 
             echo "-----------------------------------------";
             echo "<br>";
+
+            $sql = "INSERT INTO usuario "
 
     }
 ?>
