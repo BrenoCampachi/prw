@@ -3,8 +3,8 @@
     echo "<h1>Cadastro do usuário</h1>";
 
     include("conexao.php");
-    $nome = $_GET["nome_usuario"];
-    $email = $_GET["email_usuario"];
+    $nome = $_GET["nome"];
+    $email = $_GET["email"];
     $telefone = $_GET["telefone"];
 
     if (isset($_GET["nome"])) 
@@ -23,7 +23,7 @@
             echo "-----------------------------------------";
             echo "<br>";
 
-            $sql = "INSERT INTO usuario";
+            $sql = "INSERT INTO usuario1";
             echo "<br>";
 
     }

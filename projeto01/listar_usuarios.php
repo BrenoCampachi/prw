@@ -2,7 +2,7 @@
 
     include("conexao.php");
 
-    $sql = "SELECT * FROM usuario" ;
+    $sql = "SELECT * FROM usuario1";
 
     $result = mysqli_query($con, $sql);
 
@@ -35,9 +35,9 @@
             {
                 echo "<tr>";
                 echo "<td>" . $row['id_usuario'] . "</td>";
-                echo "<td>" . $row['nome_usuario'] . "</td>";
-                echo "<td>" . $row['email_usuario'] . "</td>";
-                echo "<td>" . $row['telefone_usuario'] . "</td>";
+                echo "<td>" . $row['nome'] . "</td>";
+                echo "<td>" . $row['email'] . "</td>";
+                echo "<td>" . $row['telefone'] . "</td>";
                 echo "</tr>";
             }
 

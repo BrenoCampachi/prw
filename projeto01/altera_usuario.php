@@ -1,3 +1,13 @@
+<?php
+    include("conexao.php");
+    $id_usuario = $_GET['id_usuario'];
+    $sql = "SELECT * FROM usuario WHERE id_usuario = '$id_usuario'";
+    $result = mysql_query($con.$sql);
+    $row = mysql_fetch_array($result);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,8 +26,9 @@
         
         <div>
 
-            <label for = "nome_usuario">Nome: </label>
-            <input type = "text" name = "nome_usuario"></input>
+            <label for = "nome">Nome: </label>
+            <input type = "text" name = "nome"></input>
+                value = <?php echo $row['nome']?>
 
         </div>
 
@@ -25,8 +36,8 @@
 
         <div>
             
-            <label for = "email_usuario">E-mail: </label>
-            <input type = "text" name = "email_usuario"></input>
+            <label for = "email">E-mail: </label>
+            <input type = "text" name = "email"></input>
 
         </div>
 
@@ -35,8 +46,8 @@
 
         <div>
             
-            <label for = "telefone_usuario">Telefone: </label>
-            <input type = "text" name = "telefone_usuario"></input>
+            <label for = "telefone">Telefone: </label>
+            <input type = "text" name = "telefone"></input>
 
         </div>
         

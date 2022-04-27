@@ -13,8 +13,8 @@
         exit;
     }
     
-    printf("Banco de dados conectado com sucesso \o/");
-    echo "<br>";
+    //printf("Banco de dados conectado com sucesso \o/");
+    //echo "<br>";
 
    
 ?>

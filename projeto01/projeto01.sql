@@ -10,8 +10,8 @@ use projeto01;
 -- Criação da tabela usuario 
 create table usuario(
 	id_usuario			int 			not null auto_increment,
-    nome_usuario		varchar(100)	not null,
-    email_usuario		varchar(100)	not null,
-    telefone_usuario	varchar(100)	not null,
+    nome		varchar(100)	not null,
+    email		varchar(100)	not null,
+    telefone	varchar(100)	not null,
     primary key (id_usuario)
 );
