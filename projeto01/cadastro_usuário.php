@@ -4,7 +4,7 @@
 
     include("conexao.php");
     $nome = $_GET["nome"];
-    $email = $_GET["Email"];
+    $email = $_GET["email"];
     $telefone = $_GET["telefone"];
 
     if (isset($_GET["nome"])) 
@@ -24,6 +24,7 @@
             echo "<br>";
 
             $sql = "INSERT INTO usuario";
+            echo "<br>";
 
     }
 ?>
