@@ -3,8 +3,8 @@
     echo "<h1>Cadastro do usuário</h1>";
 
     include("conexao.php");
-    $nome = $_GET["nome"];
-    $email = $_GET["email"];
+    $nome = $_GET["nome_usuario"];
+    $email = $_GET["email_usuario"];
     $telefone = $_GET["telefone"];
 
     if (isset($_GET["nome"])) 
