@@ -23,7 +23,7 @@
             echo "-----------------------------------------";
             echo "<br>";
 
-            $sql = "INSERT INTO usuario ";
+            $sql = "INSERT INTO usuario";
 
     }
 ?>
