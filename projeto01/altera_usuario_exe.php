@@ -32,4 +32,4 @@
   
 ?>
 
-<a href='index.php'> Voltar</a>
+<a href='listar_usuarios.php'> Voltar</a>
