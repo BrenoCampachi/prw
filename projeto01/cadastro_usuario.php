@@ -1,30 +1,19 @@
 <?php
-    
-    echo "<h1>Cadastro do usuário</h1>";
-
-    include("conexao.php");
-    $nome = $_GET["nome"];
-    $email = $_GET["email"];
-    $telefone = $_GET["telefone"];
-
-    if (isset($_GET["nome"])) 
-    {
-        echo "-----------------------------------------";
-            echo "<br>";
-
-            echo "<h2>Cliente Cadastrado</h2>";
-                
-            echo "Nome do cliente: " . $nome . "<br><br>";
-
-            echo "E-mail: " . $email . "<br><br>";
-
-            echo "Telefone: " . $telefone . "<br><br>";
-
-            echo "-----------------------------------------";
-            echo "<br>";
-
-            $sql = "INSERT INTO usuario1";
-            echo "<br>";
-
-    }
+    include('conexao.php');
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
+    echo "<h1> Cadastro de Usuários</h1>";
+    echo "<p> Nome: " . $nome . "<br>";
+    echo "Email: " . $email . "<br>";
+    echo "Telefone: " . $telefone . "</p>";
+	
+	$sql = "INSERT INTO usuario (nome_usuario,email_usuario,telefone_usuario) 
+	        VALUES ('".$nome."','".$email."','".$telefone."')";
+	    
+	$result = mysqli_query($con, $sql);
+	if($result)
+		echo "Dados inseridos com sucesso";
+	else
+		echo "Erro ao inserir no banco de dados: ".mysqli_error($con);
 ?>
