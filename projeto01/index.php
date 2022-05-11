@@ -10,10 +10,12 @@
 <body>
     <h1>Menu principal</h1>
     <div id="menu">
-        <ul>
+        
+            <h3>
             <li><a href="cadastro_usuario.html"> Cadastrar usuário</a></li>
             <li><a href="listar_usuarios.php"> Listar usuários</a></li>
-        </ul>
+            </h3>
+        
     </div>
 </body>
 </html>

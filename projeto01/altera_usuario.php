@@ -23,27 +23,28 @@
 </head>
 
 <body>
-    <h1>Cadastro de Clientes  - IFSP</h1>
+    <h1>Alterar Usuário</h1>
     <div id="teste">
 
         <form method="post" action="altera_usuario_exe.php">
             <fieldset>
-                <legend>Cadastro</legend>
+                <legend><h1>Alteração</h1></legend>
                 <div class="form-item">
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" value="<?php echo $row['nome_usuario']?>" placeholder="Digite o nome">
+                    <input type="text" id="nome" name="nome" value="<?php echo $row['nome_usuario']?>" placeholder="Digite o nome"><p></p>
                 </div>
                 <div class="form-item">
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" value="<?php echo $row['email_usuario']?>" placeholder="Digite o email">
+                    <input type="email" id="email" name="email" value="<?php echo $row['email_usuario']?>" placeholder="Digite o email"><p></p>
                 </div>
                 <div class="form-item">
                     <label for="telefone">Telefone:</label>
-                    <input type="text" id="telefone" name="telefone" value="<?php echo $row['telefone_usuario']?>" placeholder="Digite o Telefone">
+                    <input type="text" id="telefone" name="telefone" value="<?php echo $row['telefone_usuario']?>" placeholder="Digite o Telefone"><p></p>
                 </div>
                 <div class="form-item">
-                    <input id="btn" type="submit" value="Enviar" >
-                    <a href='index.php'> Voltar</a>
+                    <input id="btn" type="submit" value="Enviar" ><p></p>
+                    
+                    <a href='listar_usuarios.php'> Voltar</a><p></p>
                 </div>
                 <input name="id_usuario" type="hidden" value="<?php echo $row['id_usuario']?>">
                 
