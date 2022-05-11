@@ -6,10 +6,17 @@ form
     
     width:100%;
     
-    top: 20% ;
+    top: 10% ;
 }
 
 h1
+{
+    text-align: center;
+    
+    width:100%;
+}
+
+h3
 {
     text-align: center;
     

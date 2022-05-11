@@ -24,8 +24,8 @@
 <body>
 
     <h1 align="center">Listagem de Usuários</h1><br>
-    <table align="center" border="1" width="700">
-        <!-- tr>th*4 -->
+    <table align="center" border="1" width="600">
+
         <tr>
             <th>Código</th>
             <th>Nome</th>
@@ -49,4 +49,9 @@
     </table>
 
 </body>
+
+<h3>
+    <a href='index.php'> Voltar</a>
+</h3>
+
 </html>
