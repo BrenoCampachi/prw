@@ -10,7 +10,7 @@
 
 </head>
 <body>
-<h1>Aula da semana 6 - Exemplo do String</h1>
+<h1>Aula da semana 6 - Exemplo de String</h1>
 
 <?php
     

@@ -10,7 +10,7 @@
 
 </head>
 <body>
-<h1>Lista de Exercicios - 3</h1>
+<h1>Lista de Exercicios --- 3</h1>
 
 <?php
 
