@@ -10,7 +10,7 @@
 
 </head>
 <body>
-<h1>Prova de Programação - 1° Bimestre</h1>
+<h1>Prova de Programação --- 1° Bimestre</h1>
 <h1>Exercício 1</h1>
 
 <?php
