@@ -6,6 +6,8 @@
     //retorna todos os dados da consulta
     $result = mysqli_query($con, $sql);
 
+    $data_cadastro = date('d/m/Y');
+
     //retorna a primeira linha
     //$row = mysqli_fetch_array($result);
 
@@ -23,7 +25,7 @@
 </head>
 <body>
 
-    <h1 align="center">Listagem da Agenda</h1><br>
+    <h1 align="center"><font color="#FF0000">Listagem da Agenda</font></h1><br>
     <table align="center" border="1" width="600">
 
         <tr>
@@ -45,10 +47,17 @@
             while ($row = mysqli_fetch_array($result)) {
                 echo "<tr>";
                 echo "<td>" .$row['id_agenda']. "</td>";
-                echo "<td><a href='altera_usuario.php?id_usuario=".$row['id_usuario']."'>" .$row['nome_usuario']. "</a></td>";
-                echo "<td>" .$row['email_usuario']. "</td>";
-                echo "<td>" .$row['telefone_usuario']. "</td>";
-                echo "<td><a href='excluir_usuario.php?id_usuario=".$row['id_usuario']."'>Excluir</a></td>";                
+                echo "<td><a href='altera_agenda.php?id_agenda=".$row['id_agenda']."'>" .$row['nome']. "</a></td>";
+                echo "<td>" .$row['apelido']. "</td>";
+                echo "<td>" .$row['endereco']. "</td>";
+                echo "<td>" .$row['bairro']. "</td>";
+                echo "<td>" .$row['cidade']. "</td>";
+                echo "<td>" .$row['estado']. "</td>";
+                echo "<td>" .$row['telefone']. "</td>";
+                echo "<td>" .$row['celular']. "</td>";
+                echo "<td>" .$row['email']. "</td>";
+                echo "<td>" .$data_cadastro. "</td>";
+                echo "<td><a href='excluir_agenda.php?id_agenda=".$row['id_agenda']."'>Excluir</a></td>";                
                 echo "</tr>";
             }
         ?>

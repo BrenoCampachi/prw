@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1>Menu principal</h1>
+    <h1><font color="#FF0000">Menu principal</font></h1>
+    <h1><font color="#32CD32">Agenda</font></h1>
     <div id="menu">
         
             <h3>
-            <li><a href="cadastro_agenda.html"> Cadastrar Agenda</a></li>
+            <li><a href="cadastro_agenda.html"> Cadastrar Contato</a></li>
             <li><a href="listar_agenda.php"> Listar Agenda</a></li>
             </h3>
         

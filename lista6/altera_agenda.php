@@ -1,13 +1,17 @@
 <?php
    include('conexao_agenda.php');
 
-   $id_usuario = $_GET['id_agenda'];
+   $id_agenda = $_GET['id_agenda'];
 
    $sql = 'SELECT * FROM agenda where id_agenda='.$id_agenda;
 
    $result = mysqli_query($con, $sql);
 
    $row = mysqli_fetch_array($result);
+
+   $data_cadastro = date('d/m/Y');
+
+
 ?>
 
 <!DOCTYPE html>
@@ -23,10 +27,10 @@
 </head>
 
 <body>
-    <h1>Alterar Contato</h1>
+    <h1><font color="#FF0000">Alterar Contato</font></h1>
     <div id="teste">
 
-        <form method="post" action="altera_usuario_exe.php">
+        <form method="post" action="altera_agenda_exe.php">
             <fieldset>
                 <legend><h1>Alteração</h1></legend>
                 <div class="form-item">
@@ -50,11 +54,31 @@
                     <input type="cidade" id="cidade" name="cidade" value="<?php echo $row['cidade']?>" placeholder="Digite a cidade"><p></p>
                 </div>
                 <div class="form-item">
-                    <input id="btn" type="submit" value="Enviar" ><p></p>
-                    
+                    <label for="estado">Estado:</label>
+                    <input type="estado" id="estado" name="estado" value="<?php echo $row['estado']?>" placeholder="Digite o estado"><p></p>
+                </div>
+                <div class="form-item">
+                    <label for="telefone">Telefone:</label>
+                    <input type="telefone" id="telefone" name="telefone" value="<?php echo $row['telefone']?>" placeholder="Digite o telefone"><p></p>
+                </div>
+                <div class="form-item">
+                    <label for="celular">Celular:</label>
+                    <input type="celular" id="celular" name="celular" value="<?php echo $row['celular']?>" placeholder="Digite o celular"><p></p>
+                </div>
+                <div class="form-item">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" value="<?php echo $row['email']?>" placeholder="Digite o email"><p></p>
+                </div>
+                <div class="form-item">
+                    <label for="data_cadastro">Data de Cadastro:</label>
+                    <input type="data_cadastro" id="data_cadastro" name="data_cadastro" value="<?php echo $data_cadastro ?>" placeholder="Digite a data de cadastro"><p></p>
+                </div>
+                
+                <div class="form-item">
+                    <input id="btn" type="submit" value="Enviar" ><p></p> 
                     <a href='listar_agenda.php'> Voltar</a><p></p>
                 </div>
-                <input name="id_usuario" type="hidden" value="<?php echo $row['id_agenda']?>">
+                <input name="id_agenda" type="hidden" value="<?php echo $row['id_agenda']?>">
                 
             </fieldset>
         </form>
