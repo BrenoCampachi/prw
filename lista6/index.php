@@ -12,8 +12,8 @@
     <div id="menu">
         
             <h3>
-            <li><a href="cadastro_usuario.html"> Cadastrar Agenda</a></li>
-            <li><a href="listar_usuarios.php"> Listar Agenda</a></li>
+            <li><a href="cadastro_agenda.html"> Cadastrar Agenda</a></li>
+            <li><a href="listar_agenda.php"> Listar Agenda</a></li>
             </h3>
         
     </div>
