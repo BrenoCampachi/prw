@@ -1,6 +1,6 @@
 use projeto02;
 
-INSERT INTO usuario (nome, email, telefone)
+INSERT INTO usuario(nome_usuario, email_usuario, telefone_usuario)
 
 VALUES ("Breno Campachi", 'breno.campachi@aluno.ifsp.edu.br', '1233121');
 
