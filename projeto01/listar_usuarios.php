@@ -38,9 +38,9 @@
             while ($row = mysqli_fetch_array($result)) {
                 echo "<tr>";
                 echo "<td>" .$row['id_usuario']. "</td>";
-                echo "<td><a href='altera_usuario.php?id_usuario=".$row['id_usuario']."'>" .$row['nome_usuario']. "</a></td>";
-                echo "<td>" .$row['email_usuario']. "</td>";
-                echo "<td>" .$row['telefone_usuario']. "</td>";
+                echo "<td><a href='altera_usuario.php?id_usuario=".$row['id_usuario']."'>" .$row['nome']. "</a></td>";
+                echo "<td>" .$row['email']. "</td>";
+                echo "<td>" .$row['telefone']. "</td>";
                 echo "<td><a href='excluir_usuario.php?id_usuario=".$row['id_usuario']."'>Excluir</a></td>";                
                 echo "</tr>";
             }
