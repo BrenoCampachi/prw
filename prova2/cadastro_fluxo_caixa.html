@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de clientes</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1><font color="#FF0000">Fluxo de Caixa</font></h1>
+    <div id="teste">
+        <form method="post" action="cadastro_fluxo_caixa.php">
+            <fieldset>
+                <h1>Cadastro de Fluxo de Caixa</h1>
+                <div class="form-item">
+                    <label for="tipo">Tipo:</label>
+                    <input type = "radio" name = "optCaixa" value = "Entrada">Entrada</input>
+                    <input type = "radio" name = "optCaixa" value = "Saída">Saída</input>    
+                    <br>
+                    <br>
+                </div>
+                <div class="form-item">
+                    <label for="valor">Valor:</label>
+                    <input type="valor" id="valor" name="valor" placeholder="Digite o valor"><p></p>
+                </div>
+                <div class="form-item">
+                    <label for="historico">Histórico:</label>
+                    <input type="historico" id="historico" name="historico" placeholder="Escreva o historico"><p></p>
+                </div>
+                <div class="form-item">
+                    <label for="cheque">Cheque:</label>
+                    <br>
+                    <select name = "SelMenu" value = "Menu" size = "2">
+                        <option>Sim</option>
+                        <option>Não</option>
+                    </select> 
+                    <br>
+                    <br>
+                </div>
+                <div class="form-item">
+                    <input id="btn" type="submit" value="Enviar" ><p></p>
+                    <a href='index.php'> Voltar</a><p></p>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
