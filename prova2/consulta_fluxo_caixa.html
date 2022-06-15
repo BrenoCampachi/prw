@@ -1,34 +1,37 @@
-</body>
-</html>
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta de Caixa</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Consulta de Fluxo de Caixa</title>
 </head>
+
 <body>
-    <h1><font color="#FF0000">Consulta de Fluxo de Caixa</font></h1>
-    <div id="teste">
-        <form method="post" action="consulta_fluxo_caixa.php">
-            <fieldset>
-                <div>
-                    <label for="nome">Tipos de Consulta:</label>
+    <form action="consulta_fluxo_caixa.php" method="get">
+        <table align="center">
+            <tr>
+                <h1><font color="#FF0000">Consulta do Fluxo de Caixa</font></h1>            
+            </tr>
+            <tr>
+                <td>
                     <br>
+                    Tipos de Consulta:
                     <br>
-                    <input type = "radio" name = "tipo" value = "saldo">Saldo Total</input>
-                    <input type = "radio" name = "tipo" value = "saida">Total Saídas</input>
-                    <input type = "radio" name = "tipo" value = "entrada">Total Entradas</input>
-                </div>
-                <br>
-                <div class="form-item">
-                    <input id="btn" type="submit" value="Enviar" ><p></p>
-                </div>
-                <a href='index.php'> Voltar</a><p></p>
-            </fieldset>
-        </form>
-    </div>
+                </td>
+                <td>
+                    <br>
+                    <br><input type="radio" name="tipo" value="Entrada" checked>Saldo Total
+                    <br><input type="radio" name="tipo" value="Saída">Total Saídas
+                    <br><input type="radio" name="tipo" value="Entrada">Total Entradas
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br><input type="submit" value="Enviar">
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
+
 </html>

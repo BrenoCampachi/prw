@@ -1,11 +1,28 @@
 <?php
-    
-    if($tipo == "entrada"){
-        $sql = "select sum(valor) valor from fluxo_caixa where tipo = 'entrada'";
-    } else if($tipo == "saida"){
-        $sql = "select sum(valor) valor from fluxo_caixa where tipo = 'saida'";
-    } else if($tipo == "saldo"){
-        $sql = "select sum(case when tipo = 'entrada' then valor else O end) - sum(case when tipo = 'saida' then valor from fluxo_caixa)";
-    }
+include('conexao.php');
+
+$tipo = $_GET['tipo'];
+
+    if ($tipo == 'Entrada') 
+    {
+    $sql = "SELECT SUM(valor) valor FROM fluxo_caixa WHERE tipo = 'Entrada'";
+    } 
+    else if ($tipo == 'Saída') 
+    {
+    $sql = "SELECT SUM(valor) valor FROM fluxo_caixa WHERE tipo = 'Saída'";
+    } 
+    else if ($tipo == 'Saldo') 
+    {
+    $sql = "SELECT  SUM(CASE WHEN tipo = 'Entrada' THEN valor ELSE 0 END) - SUM(CASE WHEN tipo = 'Saída' THEN valor ELSE 0 END) AS valor FROM fluxo_caixa";
+}
+
+    $result = mysqli_query($con, $sql);
+    $row = mysqli_fetch_array($result);
+
+    echo "<h1> <font color=#FF0000>Cadastro do Fluxo de Caixa</font></h1> ";
+    echo "Total é de: R$".number_format($row['valor'], 2, ",", ".");
 
 ?>
+<br>
+<br>
+<a href="index.php">Voltar</a>

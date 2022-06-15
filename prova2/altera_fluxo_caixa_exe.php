@@ -7,13 +7,13 @@
 
     $data = implode("/",array_reverse(explode("-",$data)));
 
-    $tipo = $_POST['tipo'];
+    $tipo = $_POST['optCaixa'];
 
     $valor = $_POST['valor'];
 
     $historico = $_POST['historico'];
 
-    $cheque = $_POST['cheque'];
+    $cheque = $_POST['SelMenu'];
 
 
     echo "<h1><font color=#FF0000>Alterar Fluxo de Caixa</font></h1>";

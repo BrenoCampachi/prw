@@ -38,7 +38,10 @@
                 </div>
                 <div class="form-item">
                     <label for="tipo">Tipo:</label>
-                    <input type="tipo" id="tipo" name="tipo" value="<?php echo $row['tipo']?>" placeholder="Digite o tipo"><p></p>
+                    <input type = "radio" name = "optCaixa" value = "Entrada">Entrada</input>
+                    <input type = "radio" name = "optCaixa" value = "Saída">Saída</input>  
+                    <br>
+                    <br>                
                 </div>
                 <div class="form-item">
                     <label for="valor">Valor:</label>
@@ -50,7 +53,13 @@
                 </div>
                 <div class="form-item">
                     <label for="cheque">Cheque:</label>
-                    <input type="cheque" id="cheque" name="cheque" value="<?php echo $row['cheque']?>" placeholder="Digite o cheque"><p></p>
+                    <br>
+                    <select name = "SelMenu" value = "Menu" size = "2">
+                        <option>Sim</option>
+                        <option>Não</option>
+                    </select> 
+                    <br>
+                    <br>
                 </div>
                 <div class="form-item">
                     <input id="btn" type="submit" value="Enviar" ><p></p> 
