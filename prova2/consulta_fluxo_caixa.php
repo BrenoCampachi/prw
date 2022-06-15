@@ -25,4 +25,4 @@ $tipo = $_GET['tipo'];
 ?>
 <br>
 <br>
-<a href="index.php">Voltar</a>
+<a href="consulta_fluxo_caixa.html">Voltar</a>
